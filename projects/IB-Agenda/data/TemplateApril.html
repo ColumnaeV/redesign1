@@ -1,0 +1,501 @@
+<html>
+<header>
+    <title>
+    APRIL
+    </title>
+    <meta charset="utf-8">
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <link rel="stylesheet" type="text/css" href="core/css/TemplateCommonStyles.css">
+    <script src="core/js/TemplateLocalStorage.js"></script>
+    <script src="core/js/commonScripts.js"></script>
+</header>
+<body onload="loadData('apr')">
+<div id="sideNav" class="sidePanelButtons">
+        <center><img src="core/images/iblogo.png" id="ibLogo"></center>
+        <a onclick="allClasses()">ALL CLASSES</a>
+        <a onclick="zero()">ZERO HOUR</a>
+        <a onclick="first()">FIRST HOUR</a>
+        <a onclick="second()">SECOND HOUR</a>
+        <a onclick="third()">THIRD HOUR</a>
+        <a onclick="fourth()">FOURTH HOUR</a>
+        <a onclick="fifth()">FIFTH HOUR</a>
+        <a onclick="sixth()">SIXTH HOUR</a>
+        <a onclick="seventh()">SEVENTH HOUR</a>
+        <a onclick="eighth()">EIGHTH HOUR</a>
+        </div>
+<div id="contentAll">
+    <div id="topNav">
+    <div id="button" onclick="openNav()">
+        &#8801;
+        </div>
+    <div id="spacer"></div>
+    <div id="arrow" onclick="window.location='TemplateMarch.html';">
+        &#10096;
+        </div>
+    <div id="spacer"></div>
+    <div id="month">
+    APRIL
+    </div>
+    <div id="spacer"></div>
+    <div id="arrow" onclick="window.location='TemplateMay.html';">
+        &#10097;
+        </div>
+    <div id="spacer"></div>
+    <div id="month">
+    2018
+    </div>
+    </div>
+    <div id="bottomHalf" onclick="closeNav()">
+<!--Titles-->
+<div id="calendarSpacer"></div>
+<div id="calendar">
+<ul class="weekdays">
+    <li>SUNDAY</li>
+    <li>MONDAY</li>
+    <li>TUESDAY</li>
+    <li>WEDNESDAY</li>
+    <li>THURSDAY</li>
+    <li>FRIDAY</li>
+    <li>SATURDAY</li>
+</ul>
+<!--Days-->
+<ul class="days">
+    <li>1</li>
+    <li>2</li>
+    <li>3</li>
+    <li>4</li>
+    <li>5</li>
+    <li>6</li>
+    <li>7</li>
+<!--WEEK 1 TEXT-->
+    <li id="calendarContext">
+        <textarea class="ZERO" id="aprHourZero1" onkeydown="saveHour(this)" rows="3" placeholder="HOUR 0: NOTHING DUE!"></textarea>
+        <textarea class="ONE" id="aprHourOne1" onkeydown="saveHour(this)" rows="3" placeholder="HOUR 1: NOTHING DUE!"></textarea>
+        <textarea class="TWO" id="aprHourTwo1" onkeydown="saveHour(this)" rows="3" placeholder="HOUR 2: NOTHING DUE!"></textarea>
+        <textarea class="THREE" id="aprHourThree1" onkeydown="saveHour(this)" rows="3" placeholder="HOUR 3: NOTHING DUE!"></textarea>
+        <textarea class="FOUR" id="aprHourFour1" onkeydown="saveHour(this)" rows="3" placeholder="HOUR 4: NOTHING DUE!"></textarea>
+        <textarea class="FIVE" id="aprHourFive1" onkeydown="saveHour(this)" rows="3" placeholder="HOUR 5: NOTHING DUE!"></textarea>
+        <textarea class="SIX" id="aprHourSix1" onkeydown="saveHour(this)" rows="3" placeholder="HOUR 6: NOTHING DUE!"></textarea>
+        <textarea class="SEVEN" id="aprHourSeven1" onkeydown="saveHour(this)" rows="3" placeholder="HOUR 7: NOTHING DUE!"></textarea>
+        <textarea class="EIGHT" id="aprHourEight1" onkeydown="saveHour(this)" rows="3" placeholder="HOUR 8: NOTHING DUE!"></textarea>
+    </li>
+    <li id="calendarContext">
+        <textarea class="ZERO" id="aprHourZero2" onkeydown="saveHour(this)" rows="3" placeholder="HOUR 0: NOTHING DUE!"></textarea>
+        <textarea class="ONE" id="aprHourOne2" onkeydown="saveHour(this)" rows="3" placeholder="HOUR 1: NOTHING DUE!"></textarea>
+        <textarea class="TWO" id="aprHourTwo2" onkeydown="saveHour(this)" rows="3" placeholder="HOUR 2: NOTHING DUE!"></textarea>
+        <textarea class="THREE" id="aprHourThree2" onkeydown="saveHour(this)" rows="3" placeholder="HOUR 3: NOTHING DUE!"></textarea>
+        <textarea class="FOUR" id="aprHourFour2" onkeydown="saveHour(this)" rows="3" placeholder="HOUR 4: NOTHING DUE!"></textarea>
+        <textarea class="FIVE" id="aprHourFive2" onkeydown="saveHour(this)" rows="3" placeholder="HOUR 5: NOTHING DUE!"></textarea>
+        <textarea class="SIX" id="aprHourSix2" onkeydown="saveHour(this)" rows="3" placeholder="HOUR 6: NOTHING DUE!"></textarea>
+        <textarea class="SEVEN" id="aprHourSeven2" onkeydown="saveHour(this)" rows="3" placeholder="HOUR 7: NOTHING DUE!"></textarea>
+        <textarea class="EIGHT" id="aprHourEight2" onkeydown="saveHour(this)" rows="3" placeholder="HOUR 8: NOTHING DUE!"></textarea>
+    </li>
+    <li id="calendarContext">
+        <textarea class="ZERO" id="aprHourZero3" onkeydown="saveHour(this)" rows="3" placeholder="HOUR 0: NOTHING DUE!"></textarea>
+        <textarea class="ONE" id="aprHourOne3" onkeydown="saveHour(this)" rows="3" placeholder="HOUR 1: NOTHING DUE!"></textarea>
+        <textarea class="TWO" id="aprHourTwo3" onkeydown="saveHour(this)" rows="3" placeholder="HOUR 2: NOTHING DUE!"></textarea>
+        <textarea class="THREE" id="aprHourThree3" onkeydown="saveHour(this)" rows="3" placeholder="HOUR 3: NOTHING DUE!"></textarea>
+        <textarea class="FOUR" id="aprHourFour3" onkeydown="saveHour(this)" rows="3" placeholder="HOUR 4: NOTHING DUE!"></textarea>
+        <textarea class="FIVE" id="aprHourFive3" onkeydown="saveHour(this)" rows="3" placeholder="HOUR 5: NOTHING DUE!"></textarea>
+        <textarea class="SIX" id="aprHourSix3" onkeydown="saveHour(this)" rows="3" placeholder="HOUR 6: NOTHING DUE!"></textarea>
+        <textarea class="SEVEN" id="aprHourSeven3" onkeydown="saveHour(this)" rows="3" placeholder="HOUR 7: NOTHING DUE!"></textarea>
+        <textarea class="EIGHT" id="aprHourEight3" onkeydown="saveHour(this)" rows="3" placeholder="HOUR 8: NOTHING DUE!"></textarea>
+    </li>
+    <li id="calendarContext">
+        <textarea class="ZERO" id="aprHourZero4" onkeydown="saveHour(this)" rows="3" placeholder="HOUR 0: NOTHING DUE!"></textarea>
+        <textarea class="ONE" id="aprHourOne4" onkeydown="saveHour(this)" rows="3" placeholder="HOUR 1: NOTHING DUE!"></textarea>
+        <textarea class="TWO" id="aprHourTwo4" onkeydown="saveHour(this)" rows="3" placeholder="HOUR 2: NOTHING DUE!"></textarea>
+        <textarea class="THREE" id="aprHourThree4" onkeydown="saveHour(this)" rows="3" placeholder="HOUR 3: NOTHING DUE!"></textarea>
+        <textarea class="FOUR" id="aprHourFour4" onkeydown="saveHour(this)" rows="3" placeholder="HOUR 4: NOTHING DUE!"></textarea>
+        <textarea class="FIVE" id="aprHourFive4" onkeydown="saveHour(this)" rows="3" placeholder="HOUR 5: NOTHING DUE!"></textarea>
+        <textarea class="SIX" id="aprHourSix4" onkeydown="saveHour(this)" rows="3" placeholder="HOUR 6: NOTHING DUE!"></textarea>
+        <textarea class="SEVEN" id="aprHourSeven4" onkeydown="saveHour(this)" rows="3" placeholder="HOUR 7: NOTHING DUE!"></textarea>
+        <textarea class="EIGHT" id="aprHourEight4" onkeydown="saveHour(this)" rows="3" placeholder="HOUR 8: NOTHING DUE!"></textarea>
+    </li>
+    <li id="calendarContext">
+        <textarea class="ZERO" id="aprHourZero5" onkeydown="saveHour(this)" rows="3" placeholder="HOUR 0: NOTHING DUE!"></textarea>
+        <textarea class="ONE" id="aprHourOne5" onkeydown="saveHour(this)" rows="3" placeholder="HOUR 1: NOTHING DUE!"></textarea>
+        <textarea class="TWO" id="aprHourTwo5" onkeydown="saveHour(this)" rows="3" placeholder="HOUR 2: NOTHING DUE!"></textarea>
+        <textarea class="THREE" id="aprHourThree5" onkeydown="saveHour(this)" rows="3" placeholder="HOUR 3: NOTHING DUE!"></textarea>
+        <textarea class="FOUR" id="aprHourFour5" onkeydown="saveHour(this)" rows="3" placeholder="HOUR 4: NOTHING DUE!"></textarea>
+        <textarea class="FIVE" id="aprHourFive5" onkeydown="saveHour(this)" rows="3" placeholder="HOUR 5: NOTHING DUE!"></textarea>
+        <textarea class="SIX" id="aprHourSix5" onkeydown="saveHour(this)" rows="3" placeholder="HOUR 6: NOTHING DUE!"></textarea>
+        <textarea class="SEVEN" id="aprHourSeven5" onkeydown="saveHour(this)" rows="3" placeholder="HOUR 7: NOTHING DUE!"></textarea>
+        <textarea class="EIGHT" id="aprHourEight5" onkeydown="saveHour(this)" rows="3" placeholder="HOUR 8: NOTHING DUE!"></textarea>
+    </li>
+    <li id="calendarContext">
+        <textarea class="ZERO" id="aprHourZero6" onkeydown="saveHour(this)" rows="3" placeholder="HOUR 0: NOTHING DUE!"></textarea>
+        <textarea class="ONE" id="aprHourOne6" onkeydown="saveHour(this)" rows="3" placeholder="HOUR 1: NOTHING DUE!"></textarea>
+        <textarea class="TWO" id="aprHourTwo6" onkeydown="saveHour(this)" rows="3" placeholder="HOUR 2: NOTHING DUE!"></textarea>
+        <textarea class="THREE" id="aprHourThree6" onkeydown="saveHour(this)" rows="3" placeholder="HOUR 3: NOTHING DUE!"></textarea>
+        <textarea class="FOUR" id="aprHourFour6" onkeydown="saveHour(this)" rows="3" placeholder="HOUR 4: NOTHING DUE!"></textarea>
+        <textarea class="FIVE" id="aprHourFive6" onkeydown="saveHour(this)" rows="3" placeholder="HOUR 5: NOTHING DUE!"></textarea>
+        <textarea class="SIX" id="aprHourSix6" onkeydown="saveHour(this)" rows="3" placeholder="HOUR 6: NOTHING DUE!"></textarea>
+        <textarea class="SEVEN" id="aprHourSeven6" onkeydown="saveHour(this)" rows="3" placeholder="HOUR 7: NOTHING DUE!"></textarea>
+        <textarea class="EIGHT" id="aprHourEight6" onkeydown="saveHour(this)" rows="3" placeholder="HOUR 8: NOTHING DUE!"></textarea>
+    </li>
+    <li id="calendarContext">
+        <textarea class="ZERO" id="aprHourZero7" onkeydown="saveHour(this)" rows="3" placeholder="HOUR 0: NOTHING DUE!"></textarea>
+        <textarea class="ONE" id="aprHourOne7" onkeydown="saveHour(this)" rows="3" placeholder="HOUR 1: NOTHING DUE!"></textarea>
+        <textarea class="TWO" id="aprHourTwo7" onkeydown="saveHour(this)" rows="3" placeholder="HOUR 2: NOTHING DUE!"></textarea>
+        <textarea class="THREE" id="aprHourThree7" onkeydown="saveHour(this)" rows="3" placeholder="HOUR 3: NOTHING DUE!"></textarea>
+        <textarea class="FOUR" id="aprHourFour7" onkeydown="saveHour(this)" rows="3" placeholder="HOUR 4: NOTHING DUE!"></textarea>
+        <textarea class="FIVE" id="aprHourFive7" onkeydown="saveHour(this)" rows="3" placeholder="HOUR 5: NOTHING DUE!"></textarea>
+        <textarea class="SIX" id="aprHourSix7" onkeydown="saveHour(this)" rows="3" placeholder="HOUR 6: NOTHING DUE!"></textarea>
+        <textarea class="SEVEN" id="aprHourSeven7" onkeydown="saveHour(this)" rows="3" placeholder="HOUR 7: NOTHING DUE!"></textarea>
+        <textarea class="EIGHT" id="aprHourEight7" onkeydown="saveHour(this)" rows="3" placeholder="HOUR 8: NOTHING DUE!"></textarea>
+    </li>
+    <li>8</li>
+    <li>9</li>
+    <li>10</li>
+    <li>11</li>
+    <li>12</li>
+    <li>13</li>
+    <li>14</li>
+<!--WEEK 2 TEXT-->
+    <li id="calendarContext">
+        <textarea class="ZERO" id="aprHourZero8" onkeydown="saveHour(this)" rows="3" placeholder="HOUR 0: NOTHING DUE!"></textarea>
+        <textarea class="ONE" id="aprHourOne8" onkeydown="saveHour(this)" rows="3" placeholder="HOUR 1: NOTHING DUE!"></textarea>
+        <textarea class="TWO" id="aprHourTwo8" onkeydown="saveHour(this)" rows="3" placeholder="HOUR 2: NOTHING DUE!"></textarea>
+        <textarea class="THREE" id="aprHourThree8" onkeydown="saveHour(this)" rows="3" placeholder="HOUR 3: NOTHING DUE!"></textarea>
+        <textarea class="FOUR" id="aprHourFour8" onkeydown="saveHour(this)" rows="3" placeholder="HOUR 4: NOTHING DUE!"></textarea>
+        <textarea class="FIVE" id="aprHourFive8" onkeydown="saveHour(this)" rows="3" placeholder="HOUR 5: NOTHING DUE!"></textarea>
+        <textarea class="SIX" id="aprHourSix8" onkeydown="saveHour(this)" rows="3" placeholder="HOUR 6: NOTHING DUE!"></textarea>
+        <textarea class="SEVEN" id="aprHourSeven8" onkeydown="saveHour(this)" rows="3" placeholder="HOUR 7: NOTHING DUE!"></textarea>
+        <textarea class="EIGHT" id="aprHourEight8" onkeydown="saveHour(this)" rows="3" placeholder="HOUR 8: NOTHING DUE!"></textarea>
+    </li>
+    <li id="calendarContext">
+        <textarea class="ZERO" id="aprHourZero9" onkeydown="saveHour(this)" rows="3" placeholder="HOUR 0: NOTHING DUE!"></textarea>
+        <textarea class="ONE" id="aprHourOne9" onkeydown="saveHour(this)" rows="3" placeholder="HOUR 1: NOTHING DUE!"></textarea>
+        <textarea class="TWO" id="aprHourTwo9" onkeydown="saveHour(this)" rows="3" placeholder="HOUR 2: NOTHING DUE!"></textarea>
+        <textarea class="THREE" id="aprHourThree9" onkeydown="saveHour(this)" rows="3" placeholder="HOUR 3: NOTHING DUE!"></textarea>
+        <textarea class="FOUR" id="aprHourFour9" onkeydown="saveHour(this)" rows="3" placeholder="HOUR 4: NOTHING DUE!"></textarea>
+        <textarea class="FIVE" id="aprHourFive9" onkeydown="saveHour(this)" rows="3" placeholder="HOUR 5: NOTHING DUE!"></textarea>
+        <textarea class="SIX" id="aprHourSix9" onkeydown="saveHour(this)" rows="3" placeholder="HOUR 6: NOTHING DUE!"></textarea>
+        <textarea class="SEVEN" id="aprHourSeven9" onkeydown="saveHour(this)" rows="3" placeholder="HOUR 7: NOTHING DUE!"></textarea>
+        <textarea class="EIGHT" id="aprHourEight9" onkeydown="saveHour(this)" rows="3" placeholder="HOUR 8: NOTHING DUE!"></textarea>
+    </li>
+    <li id="calendarContext">
+        <textarea class="ZERO" id="aprHourZero10" onkeydown="saveHour(this)" rows="3" placeholder="HOUR 0: NOTHING DUE!"></textarea>
+        <textarea class="ONE" id="aprHourOne10" onkeydown="saveHour(this)" rows="3" placeholder="HOUR 1: NOTHING DUE!"></textarea>
+        <textarea class="TWO" id="aprHourTwo10" onkeydown="saveHour(this)" rows="3" placeholder="HOUR 2: NOTHING DUE!"></textarea>
+        <textarea class="THREE" id="aprHourThree10" onkeydown="saveHour(this)" rows="3" placeholder="HOUR 3: NOTHING DUE!"></textarea>
+        <textarea class="FOUR" id="aprHourFour10" onkeydown="saveHour(this)" rows="3" placeholder="HOUR 4: NOTHING DUE!"></textarea>
+        <textarea class="FIVE" id="aprHourFive10" onkeydown="saveHour(this)" rows="3" placeholder="HOUR 5: NOTHING DUE!"></textarea>
+        <textarea class="SIX" id="aprHourSix10" onkeydown="saveHour(this)" rows="3" placeholder="HOUR 6: NOTHING DUE!"></textarea>
+        <textarea class="SEVEN" id="aprHourSeven10" onkeydown="saveHour(this)" rows="3" placeholder="HOUR 7: NOTHING DUE!"></textarea>
+        <textarea class="EIGHT" id="aprHourEight10" onkeydown="saveHour(this)" rows="3" placeholder="HOUR 8: NOTHING DUE!"></textarea>
+    </li>
+    <li id="calendarContext">
+        <textarea class="ZERO" id="aprHourZero11" onkeydown="saveHour(this)" rows="3" placeholder="HOUR 0: NOTHING DUE!"></textarea>
+        <textarea class="ONE" id="aprHourOne11" onkeydown="saveHour(this)" rows="3" placeholder="HOUR 1: NOTHING DUE!"></textarea>
+        <textarea class="TWO" id="aprHourTwo11" onkeydown="saveHour(this)" rows="3" placeholder="HOUR 2: NOTHING DUE!"></textarea>
+        <textarea class="THREE" id="aprHourThree11" onkeydown="saveHour(this)" rows="3" placeholder="HOUR 3: NOTHING DUE!"></textarea>
+        <textarea class="FOUR" id="aprHourFour11" onkeydown="saveHour(this)" rows="3" placeholder="HOUR 4: NOTHING DUE!"></textarea>
+        <textarea class="FIVE" id="aprHourFive11" onkeydown="saveHour(this)" rows="3" placeholder="HOUR 5: NOTHING DUE!"></textarea>
+        <textarea class="SIX" id="aprHourSix11" onkeydown="saveHour(this)" rows="3" placeholder="HOUR 6: NOTHING DUE!"></textarea>
+        <textarea class="SEVEN" id="aprHourSeven11" onkeydown="saveHour(this)" rows="3" placeholder="HOUR 7: NOTHING DUE!"></textarea>
+        <textarea class="EIGHT" id="aprHourEight11" onkeydown="saveHour(this)" rows="3" placeholder="HOUR 8: NOTHING DUE!"></textarea>
+    </li>
+    <li id="calendarContext">
+        <textarea class="ZERO" id="aprHourZero12" onkeydown="saveHour(this)" rows="3" placeholder="HOUR 0: NOTHING DUE!"></textarea>
+        <textarea class="ONE" id="aprHourOne12" onkeydown="saveHour(this)" rows="3" placeholder="HOUR 1: NOTHING DUE!"></textarea>
+        <textarea class="TWO" id="aprHourTwo12" onkeydown="saveHour(this)" rows="3" placeholder="HOUR 2: NOTHING DUE!"></textarea>
+        <textarea class="THREE" id="aprHourThree12" onkeydown="saveHour(this)" rows="3" placeholder="HOUR 3: NOTHING DUE!"></textarea>
+        <textarea class="FOUR" id="aprHourFour12" onkeydown="saveHour(this)" rows="3" placeholder="HOUR 4: NOTHING DUE!"></textarea>
+        <textarea class="FIVE" id="aprHourFive12" onkeydown="saveHour(this)" rows="3" placeholder="HOUR 5: NOTHING DUE!"></textarea>
+        <textarea class="SIX" id="aprHourSix12" onkeydown="saveHour(this)" rows="3" placeholder="HOUR 6: NOTHING DUE!"></textarea>
+        <textarea class="SEVEN" id="aprHourSeven12" onkeydown="saveHour(this)" rows="3" placeholder="HOUR 7: NOTHING DUE!"></textarea>
+        <textarea class="EIGHT" id="aprHourEight12" onkeydown="saveHour(this)" rows="3" placeholder="HOUR 8: NOTHING DUE!"></textarea>
+    </li>
+    <li id="calendarContext">
+        <textarea class="ZERO" id="aprHourZero13" onkeydown="saveHour(this)" rows="3" placeholder="HOUR 0: NOTHING DUE!"></textarea>
+        <textarea class="ONE" id="aprHourOne13" onkeydown="saveHour(this)" rows="3" placeholder="HOUR 1: NOTHING DUE!"></textarea>
+        <textarea class="TWO" id="aprHourTwo13" onkeydown="saveHour(this)" rows="3" placeholder="HOUR 2: NOTHING DUE!"></textarea>
+        <textarea class="THREE" id="aprHourThree13" onkeydown="saveHour(this)" rows="3" placeholder="HOUR 3: NOTHING DUE!"></textarea>
+        <textarea class="FOUR" id="aprHourFour13" onkeydown="saveHour(this)" rows="3" placeholder="HOUR 4: NOTHING DUE!"></textarea>
+        <textarea class="FIVE" id="aprHourFive13" onkeydown="saveHour(this)" rows="3" placeholder="HOUR 5: NOTHING DUE!"></textarea>
+        <textarea class="SIX" id="aprHourSix13" onkeydown="saveHour(this)" rows="3" placeholder="HOUR 6: NOTHING DUE!"></textarea>
+        <textarea class="SEVEN" id="aprHourSeven13" onkeydown="saveHour(this)" rows="3" placeholder="HOUR 7: NOTHING DUE!"></textarea>
+        <textarea class="EIGHT" id="aprHourEight13" onkeydown="saveHour(this)" rows="3" placeholder="HOUR 8: NOTHING DUE!"></textarea>
+    </li>
+    <li id="calendarContext">
+        <textarea class="ZERO" id="aprHourZero14" onkeydown="saveHour(this)" rows="3" placeholder="HOUR 0: NOTHING DUE!"></textarea>
+        <textarea class="ONE" id="aprHourOne14" onkeydown="saveHour(this)" rows="3" placeholder="HOUR 1: NOTHING DUE!"></textarea>
+        <textarea class="TWO" id="aprHourTwo14" onkeydown="saveHour(this)" rows="3" placeholder="HOUR 2: NOTHING DUE!"></textarea>
+        <textarea class="THREE" id="aprHourThree14" onkeydown="saveHour(this)" rows="3" placeholder="HOUR 3: NOTHING DUE!"></textarea>
+        <textarea class="FOUR" id="aprHourFour14" onkeydown="saveHour(this)" rows="3" placeholder="HOUR 4: NOTHING DUE!"></textarea>
+        <textarea class="FIVE" id="aprHourFive14" onkeydown="saveHour(this)" rows="3" placeholder="HOUR 5: NOTHING DUE!"></textarea>
+        <textarea class="SIX" id="aprHourSix14" onkeydown="saveHour(this)" rows="3" placeholder="HOUR 6: NOTHING DUE!"></textarea>
+        <textarea class="SEVEN" id="aprHourSeven14" onkeydown="saveHour(this)" rows="3" placeholder="HOUR 7: NOTHING DUE!"></textarea>
+        <textarea class="EIGHT" id="aprHourEight14" onkeydown="saveHour(this)" rows="3" placeholder="HOUR 8: NOTHING DUE!"></textarea>
+    </li>
+    <li>15</li>
+    <li>16</li>
+    <li>17</li>
+    <li>18</li>
+    <li>19</li>
+    <li>20</li>
+    <li>21</li>
+<!--WEEK 3 TEXT-->
+    <li id="calendarContext">
+        <textarea class="ZERO" id="aprHourZero15" onkeydown="saveHour(this)" rows="3" placeholder="HOUR 0: NOTHING DUE!"></textarea>
+        <textarea class="ONE" id="aprHourOne15" onkeydown="saveHour(this)" rows="3" placeholder="HOUR 1: NOTHING DUE!"></textarea>
+        <textarea class="TWO" id="aprHourTwo15" onkeydown="saveHour(this)" rows="3" placeholder="HOUR 2: NOTHING DUE!"></textarea>
+        <textarea class="THREE" id="aprHourThree15" onkeydown="saveHour(this)" rows="3" placeholder="HOUR 3: NOTHING DUE!"></textarea>
+        <textarea class="FOUR" id="aprHourFour15" onkeydown="saveHour(this)" rows="3" placeholder="HOUR 4: NOTHING DUE!"></textarea>
+        <textarea class="FIVE" id="aprHourFive15" onkeydown="saveHour(this)" rows="3" placeholder="HOUR 5: NOTHING DUE!"></textarea>
+        <textarea class="SIX" id="aprHourSix15" onkeydown="saveHour(this)" rows="3" placeholder="HOUR 6: NOTHING DUE!"></textarea>
+        <textarea class="SEVEN" id="aprHourSeven15" onkeydown="saveHour(this)" rows="3" placeholder="HOUR 7: NOTHING DUE!"></textarea>
+        <textarea class="EIGHT" id="aprHourEight15" onkeydown="saveHour(this)" rows="3" placeholder="HOUR 8: NOTHING DUE!"></textarea>
+    </li>
+    <li id="calendarContext">
+        <textarea class="ZERO" id="aprHourZero16" onkeydown="saveHour(this)" rows="3" placeholder="HOUR 0: NOTHING DUE!"></textarea>
+        <textarea class="ONE" id="aprHourOne16" onkeydown="saveHour(this)" rows="3" placeholder="HOUR 1: NOTHING DUE!"></textarea>
+        <textarea class="TWO" id="aprHourTwo16" onkeydown="saveHour(this)" rows="3" placeholder="HOUR 2: NOTHING DUE!"></textarea>
+        <textarea class="THREE" id="aprHourThree16" onkeydown="saveHour(this)" rows="3" placeholder="HOUR 3: NOTHING DUE!"></textarea>
+        <textarea class="FOUR" id="aprHourFour16" onkeydown="saveHour(this)" rows="3" placeholder="HOUR 4: NOTHING DUE!"></textarea>
+        <textarea class="FIVE" id="aprHourFive16" onkeydown="saveHour(this)" rows="3" placeholder="HOUR 5: NOTHING DUE!"></textarea>
+        <textarea class="SIX" id="aprHourSix16" onkeydown="saveHour(this)" rows="3" placeholder="HOUR 6: NOTHING DUE!"></textarea>
+        <textarea class="SEVEN" id="aprHourSeven16" onkeydown="saveHour(this)" rows="3" placeholder="HOUR 7: NOTHING DUE!"></textarea>
+        <textarea class="EIGHT" id="aprHourEight16" onkeydown="saveHour(this)" rows="3" placeholder="HOUR 8: NOTHING DUE!"></textarea>
+    </li>
+    <li id="calendarContext">
+        <textarea class="ZERO" id="aprHourZero17" onkeydown="saveHour(this)" rows="3" placeholder="HOUR 0: NOTHING DUE!"></textarea>
+        <textarea class="ONE" id="aprHourOne17" onkeydown="saveHour(this)" rows="3" placeholder="HOUR 1: NOTHING DUE!"></textarea>
+        <textarea class="TWO" id="aprHourTwo17" onkeydown="saveHour(this)" rows="3" placeholder="HOUR 2: NOTHING DUE!"></textarea>
+        <textarea class="THREE" id="aprHourThree17" onkeydown="saveHour(this)" rows="3" placeholder="HOUR 3: NOTHING DUE!"></textarea>
+        <textarea class="FOUR" id="aprHourFour17" onkeydown="saveHour(this)" rows="3" placeholder="HOUR 4: NOTHING DUE!"></textarea>
+        <textarea class="FIVE" id="aprHourFive17" onkeydown="saveHour(this)" rows="3" placeholder="HOUR 5: NOTHING DUE!"></textarea>
+        <textarea class="SIX" id="aprHourSix17" onkeydown="saveHour(this)" rows="3" placeholder="HOUR 6: NOTHING DUE!"></textarea>
+        <textarea class="SEVEN" id="aprHourSeven17" onkeydown="saveHour(this)" rows="3" placeholder="HOUR 7: NOTHING DUE!"></textarea>
+        <textarea class="EIGHT" id="aprHourEight17" onkeydown="saveHour(this)" rows="3" placeholder="HOUR 8: NOTHING DUE!"></textarea>
+    </li>
+    <li id="calendarContext">
+        <textarea class="ZERO" id="aprHourZero18" onkeydown="saveHour(this)" rows="3" placeholder="HOUR 0: NOTHING DUE!"></textarea>
+        <textarea class="ONE" id="aprHourOne18" onkeydown="saveHour(this)" rows="3" placeholder="HOUR 1: NOTHING DUE!"></textarea>
+        <textarea class="TWO" id="aprHourTwo18" onkeydown="saveHour(this)" rows="3" placeholder="HOUR 2: NOTHING DUE!"></textarea>
+        <textarea class="THREE" id="aprHourThree18" onkeydown="saveHour(this)" rows="3" placeholder="HOUR 3: NOTHING DUE!"></textarea>
+        <textarea class="FOUR" id="aprHourFour18" onkeydown="saveHour(this)" rows="3" placeholder="HOUR 4: NOTHING DUE!"></textarea>
+        <textarea class="FIVE" id="aprHourFive18" onkeydown="saveHour(this)" rows="3" placeholder="HOUR 5: NOTHING DUE!"></textarea>
+        <textarea class="SIX" id="aprHourSix18" onkeydown="saveHour(this)" rows="3" placeholder="HOUR 6: NOTHING DUE!"></textarea>
+        <textarea class="SEVEN" id="aprHourSeven18" onkeydown="saveHour(this)" rows="3" placeholder="HOUR 7: NOTHING DUE!"></textarea>
+        <textarea class="EIGHT" id="aprHourEight18" onkeydown="saveHour(this)" rows="3" placeholder="HOUR 8: NOTHING DUE!"></textarea>
+    </li>
+    <li id="calendarContext">
+        <textarea class="ZERO" id="aprHourZero19" onkeydown="saveHour(this)" rows="3" placeholder="HOUR 0: NOTHING DUE!"></textarea>
+        <textarea class="ONE" id="aprHourOne19" onkeydown="saveHour(this)" rows="3" placeholder="HOUR 1: NOTHING DUE!"></textarea>
+        <textarea class="TWO" id="aprHourTwo19" onkeydown="saveHour(this)" rows="3" placeholder="HOUR 2: NOTHING DUE!"></textarea>
+        <textarea class="THREE" id="aprHourThree19" onkeydown="saveHour(this)" rows="3" placeholder="HOUR 3: NOTHING DUE!"></textarea>
+        <textarea class="FOUR" id="aprHourFour19" onkeydown="saveHour(this)" rows="3" placeholder="HOUR 4: NOTHING DUE!"></textarea>
+        <textarea class="FIVE" id="aprHourFive19" onkeydown="saveHour(this)" rows="3" placeholder="HOUR 5: NOTHING DUE!"></textarea>
+        <textarea class="SIX" id="aprHourSix19" onkeydown="saveHour(this)" rows="3" placeholder="HOUR 6: NOTHING DUE!"></textarea>
+        <textarea class="SEVEN" id="aprHourSeven19" onkeydown="saveHour(this)" rows="3" placeholder="HOUR 7: NOTHING DUE!"></textarea>
+        <textarea class="EIGHT" id="aprHourEight19" onkeydown="saveHour(this)" rows="3" placeholder="HOUR 8: NOTHING DUE!"></textarea>
+    </li>
+    <li id="calendarContext">
+        <textarea class="ZERO" id="aprHourZero20" onkeydown="saveHour(this)" rows="3" placeholder="HOUR 0: NOTHING DUE!"></textarea>
+        <textarea class="ONE" id="aprHourOne20" onkeydown="saveHour(this)" rows="3" placeholder="HOUR 1: NOTHING DUE!"></textarea>
+        <textarea class="TWO" id="aprHourTwo20" onkeydown="saveHour(this)" rows="3" placeholder="HOUR 2: NOTHING DUE!"></textarea>
+        <textarea class="THREE" id="aprHourThree20" onkeydown="saveHour(this)" rows="3" placeholder="HOUR 3: NOTHING DUE!"></textarea>
+        <textarea class="FOUR" id="aprHourFour20" onkeydown="saveHour(this)" rows="3" placeholder="HOUR 4: NOTHING DUE!"></textarea>
+        <textarea class="FIVE" id="aprHourFive20" onkeydown="saveHour(this)" rows="3" placeholder="HOUR 5: NOTHING DUE!"></textarea>
+        <textarea class="SIX" id="aprHourSix20" onkeydown="saveHour(this)" rows="3" placeholder="HOUR 6: NOTHING DUE!"></textarea>
+        <textarea class="SEVEN" id="aprHourSeven20" onkeydown="saveHour(this)" rows="3" placeholder="HOUR 7: NOTHING DUE!"></textarea>
+        <textarea class="EIGHT" id="aprHourEight20" onkeydown="saveHour(this)" rows="3" placeholder="HOUR 8: NOTHING DUE!"></textarea>
+    </li>
+    <li id="calendarContext">
+        <textarea class="ZERO" id="aprHourZero21" onkeydown="saveHour(this)" rows="3" placeholder="HOUR 0: NOTHING DUE!"></textarea>
+        <textarea class="ONE" id="aprHourOne21" onkeydown="saveHour(this)" rows="3" placeholder="HOUR 1: NOTHING DUE!"></textarea>
+        <textarea class="TWO" id="aprHourTwo21" onkeydown="saveHour(this)" rows="3" placeholder="HOUR 2: NOTHING DUE!"></textarea>
+        <textarea class="THREE" id="aprHourThree21" onkeydown="saveHour(this)" rows="3" placeholder="HOUR 3: NOTHING DUE!"></textarea>
+        <textarea class="FOUR" id="aprHourFour21" onkeydown="saveHour(this)" rows="3" placeholder="HOUR 4: NOTHING DUE!"></textarea>
+        <textarea class="FIVE" id="aprHourFive21" onkeydown="saveHour(this)" rows="3" placeholder="HOUR 5: NOTHING DUE!"></textarea>
+        <textarea class="SIX" id="aprHourSix21" onkeydown="saveHour(this)" rows="3" placeholder="HOUR 6: NOTHING DUE!"></textarea>
+        <textarea class="SEVEN" id="aprHourSeven21" onkeydown="saveHour(this)" rows="3" placeholder="HOUR 7: NOTHING DUE!"></textarea>
+        <textarea class="EIGHT" id="aprHourEight21" onkeydown="saveHour(this)" rows="3" placeholder="HOUR 8: NOTHING DUE!"></textarea>
+    </li>
+    <li>22</li>
+    <li>23</li>
+    <li>24</li>
+    <li>25</li>
+    <li>26</li>
+    <li>27</li>
+    <li>28</li>
+<!--WEEK 4 TEXT-->
+    <li id="calendarContext">
+        <textarea class="ZERO" id="aprHourZero22" onkeydown="saveHour(this)" rows="3" placeholder="HOUR 0: NOTHING DUE!"></textarea>
+        <textarea class="ONE" id="aprHourOne22" onkeydown="saveHour(this)" rows="3" placeholder="HOUR 1: NOTHING DUE!"></textarea>
+        <textarea class="TWO" id="aprHourTwo22" onkeydown="saveHour(this)" rows="3" placeholder="HOUR 2: NOTHING DUE!"></textarea>
+        <textarea class="THREE" id="aprHourThree22" onkeydown="saveHour(this)" rows="3" placeholder="HOUR 3: NOTHING DUE!"></textarea>
+        <textarea class="FOUR" id="aprHourFour22" onkeydown="saveHour(this)" rows="3" placeholder="HOUR 4: NOTHING DUE!"></textarea>
+        <textarea class="FIVE" id="aprHourFive22" onkeydown="saveHour(this)" rows="3" placeholder="HOUR 5: NOTHING DUE!"></textarea>
+        <textarea class="SIX" id="aprHourSix22" onkeydown="saveHour(this)" rows="3" placeholder="HOUR 6: NOTHING DUE!"></textarea>
+        <textarea class="SEVEN" id="aprHourSeven22" onkeydown="saveHour(this)" rows="3" placeholder="HOUR 7: NOTHING DUE!"></textarea>
+        <textarea class="EIGHT" id="aprHourEight22" onkeydown="saveHour(this)" rows="3" placeholder="HOUR 8: NOTHING DUE!"></textarea>
+    </li>
+    <li id="calendarContext">
+        <textarea class="ZERO" id="aprHourZero23" onkeydown="saveHour(this)" rows="3" placeholder="HOUR 0: NOTHING DUE!"></textarea>
+        <textarea class="ONE" id="aprHourOne23" onkeydown="saveHour(this)" rows="3" placeholder="HOUR 1: NOTHING DUE!"></textarea>
+        <textarea class="TWO" id="aprHourTwo23" onkeydown="saveHour(this)" rows="3" placeholder="HOUR 2: NOTHING DUE!"></textarea>
+        <textarea class="THREE" id="aprHourThree23" onkeydown="saveHour(this)" rows="3" placeholder="HOUR 3: NOTHING DUE!"></textarea>
+        <textarea class="FOUR" id="aprHourFour23" onkeydown="saveHour(this)" rows="3" placeholder="HOUR 4: NOTHING DUE!"></textarea>
+        <textarea class="FIVE" id="aprHourFive23" onkeydown="saveHour(this)" rows="3" placeholder="HOUR 5: NOTHING DUE!"></textarea>
+        <textarea class="SIX" id="aprHourSix23" onkeydown="saveHour(this)" rows="3" placeholder="HOUR 6: NOTHING DUE!"></textarea>
+        <textarea class="SEVEN" id="aprHourSeven23" onkeydown="saveHour(this)" rows="3" placeholder="HOUR 7: NOTHING DUE!"></textarea>
+        <textarea class="EIGHT" id="aprHourEight23" onkeydown="saveHour(this)" rows="3" placeholder="HOUR 8: NOTHING DUE!"></textarea>
+    </li>
+    <li id="calendarContext">
+        <textarea class="ZERO" id="aprHourZero24" onkeydown="saveHour(this)" rows="3" placeholder="HOUR 0: NOTHING DUE!"></textarea>
+        <textarea class="ONE" id="aprHourOne24" onkeydown="saveHour(this)" rows="3" placeholder="HOUR 1: NOTHING DUE!"></textarea>
+        <textarea class="TWO" id="aprHourTwo24" onkeydown="saveHour(this)" rows="3" placeholder="HOUR 2: NOTHING DUE!"></textarea>
+        <textarea class="THREE" id="aprHourThree24" onkeydown="saveHour(this)" rows="3" placeholder="HOUR 3: NOTHING DUE!"></textarea>
+        <textarea class="FOUR" id="aprHourFour24" onkeydown="saveHour(this)" rows="3" placeholder="HOUR 4: NOTHING DUE!"></textarea>
+        <textarea class="FIVE" id="aprHourFive24" onkeydown="saveHour(this)" rows="3" placeholder="HOUR 5: NOTHING DUE!"></textarea>
+        <textarea class="SIX" id="aprHourSix24" onkeydown="saveHour(this)" rows="3" placeholder="HOUR 6: NOTHING DUE!"></textarea>
+        <textarea class="SEVEN" id="aprHourSeven24" onkeydown="saveHour(this)" rows="3" placeholder="HOUR 7: NOTHING DUE!"></textarea>
+        <textarea class="EIGHT" id="aprHourEight24" onkeydown="saveHour(this)" rows="3" placeholder="HOUR 8: NOTHING DUE!"></textarea>
+    </li>
+    <li id="calendarContext">
+        <textarea class="ZERO" id="aprHourZero25" onkeydown="saveHour(this)" rows="3" placeholder="HOUR 0: NOTHING DUE!"></textarea>
+        <textarea class="ONE" id="aprHourOne25" onkeydown="saveHour(this)" rows="3" placeholder="HOUR 1: NOTHING DUE!"></textarea>
+        <textarea class="TWO" id="aprHourTwo25" onkeydown="saveHour(this)" rows="3" placeholder="HOUR 2: NOTHING DUE!"></textarea>
+        <textarea class="THREE" id="aprHourThree25" onkeydown="saveHour(this)" rows="3" placeholder="HOUR 3: NOTHING DUE!"></textarea>
+        <textarea class="FOUR" id="aprHourFour25" onkeydown="saveHour(this)" rows="3" placeholder="HOUR 4: NOTHING DUE!"></textarea>
+        <textarea class="FIVE" id="aprHourFive25" onkeydown="saveHour(this)" rows="3" placeholder="HOUR 5: NOTHING DUE!"></textarea>
+        <textarea class="SIX" id="aprHourSix25" onkeydown="saveHour(this)" rows="3" placeholder="HOUR 6: NOTHING DUE!"></textarea>
+        <textarea class="SEVEN" id="aprHourSeven25" onkeydown="saveHour(this)" rows="3" placeholder="HOUR 7: NOTHING DUE!"></textarea>
+        <textarea class="EIGHT" id="aprHourEight25" onkeydown="saveHour(this)" rows="3" placeholder="HOUR 8: NOTHING DUE!"></textarea>
+    </li>
+    <li id="calendarContext">
+        <textarea class="ZERO" id="aprHourZero26" onkeydown="saveHour(this)" rows="3" placeholder="HOUR 0: NOTHING DUE!"></textarea>
+        <textarea class="ONE" id="aprHourOne26" onkeydown="saveHour(this)" rows="3" placeholder="HOUR 1: NOTHING DUE!"></textarea>
+        <textarea class="TWO" id="aprHourTwo26" onkeydown="saveHour(this)" rows="3" placeholder="HOUR 2: NOTHING DUE!"></textarea>
+        <textarea class="THREE" id="aprHourThree26" onkeydown="saveHour(this)" rows="3" placeholder="HOUR 3: NOTHING DUE!"></textarea>
+        <textarea class="FOUR" id="aprHourFour26" onkeydown="saveHour(this)" rows="3" placeholder="HOUR 4: NOTHING DUE!"></textarea>
+        <textarea class="FIVE" id="aprHourFive26" onkeydown="saveHour(this)" rows="3" placeholder="HOUR 5: NOTHING DUE!"></textarea>
+        <textarea class="SIX" id="aprHourSix26" onkeydown="saveHour(this)" rows="3" placeholder="HOUR 6: NOTHING DUE!"></textarea>
+        <textarea class="SEVEN" id="aprHourSeven26" onkeydown="saveHour(this)" rows="3" placeholder="HOUR 7: NOTHING DUE!"></textarea>
+        <textarea class="EIGHT" id="aprHourEight26" onkeydown="saveHour(this)" rows="3" placeholder="HOUR 8: NOTHING DUE!"></textarea>
+    </li>
+    <li id="calendarContext">
+        <textarea class="ZERO" id="aprHourZero27" onkeydown="saveHour(this)" rows="3" placeholder="HOUR 0: NOTHING DUE!"></textarea>
+        <textarea class="ONE" id="aprHourOne27" onkeydown="saveHour(this)" rows="3" placeholder="HOUR 1: NOTHING DUE!"></textarea>
+        <textarea class="TWO" id="aprHourTwo27" onkeydown="saveHour(this)" rows="3" placeholder="HOUR 2: NOTHING DUE!"></textarea>
+        <textarea class="THREE" id="aprHourThree27" onkeydown="saveHour(this)" rows="3" placeholder="HOUR 3: NOTHING DUE!"></textarea>
+        <textarea class="FOUR" id="aprHourFour27" onkeydown="saveHour(this)" rows="3" placeholder="HOUR 4: NOTHING DUE!"></textarea>
+        <textarea class="FIVE" id="aprHourFive27" onkeydown="saveHour(this)" rows="3" placeholder="HOUR 5: NOTHING DUE!"></textarea>
+        <textarea class="SIX" id="aprHourSix27" onkeydown="saveHour(this)" rows="3" placeholder="HOUR 6: NOTHING DUE!"></textarea>
+        <textarea class="SEVEN" id="aprHourSeven27" onkeydown="saveHour(this)" rows="3" placeholder="HOUR 7: NOTHING DUE!"></textarea>
+        <textarea class="EIGHT" id="aprHourEight27" onkeydown="saveHour(this)" rows="3" placeholder="HOUR 8: NOTHING DUE!"></textarea>
+    </li>
+    <li id="calendarContext">
+        <textarea class="ZERO" id="aprHourZero28" onkeydown="saveHour(this)" rows="3" placeholder="HOUR 0: NOTHING DUE!"></textarea>
+        <textarea class="ONE" id="aprHourOne28" onkeydown="saveHour(this)" rows="3" placeholder="HOUR 1: NOTHING DUE!"></textarea>
+        <textarea class="TWO" id="aprHourTwo28" onkeydown="saveHour(this)" rows="3" placeholder="HOUR 2: NOTHING DUE!"></textarea>
+        <textarea class="THREE" id="aprHourThree28" onkeydown="saveHour(this)" rows="3" placeholder="HOUR 3: NOTHING DUE!"></textarea>
+        <textarea class="FOUR" id="aprHourFour28" onkeydown="saveHour(this)" rows="3" placeholder="HOUR 4: NOTHING DUE!"></textarea>
+        <textarea class="FIVE" id="aprHourFive28" onkeydown="saveHour(this)" rows="3" placeholder="HOUR 5: NOTHING DUE!"></textarea>
+        <textarea class="SIX" id="aprHourSix28" onkeydown="saveHour(this)" rows="3" placeholder="HOUR 6: NOTHING DUE!"></textarea>
+        <textarea class="SEVEN" id="aprHourSeven28" onkeydown="saveHour(this)" rows="3" placeholder="HOUR 7: NOTHING DUE!"></textarea>
+        <textarea class="EIGHT" id="aprHourEight28" onkeydown="saveHour(this)" rows="3" placeholder="HOUR 8: NOTHING DUE!"></textarea>
+    </li>
+    <li>29</li>
+    <li>30</li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+<!--WEEK 5 TEXT-->
+    <li id="calendarContext">
+        <textarea class="ZERO" id="aprHourZero29" onkeydown="saveHour(this)" rows="3" placeholder="HOUR 0: NOTHING DUE!"></textarea>
+        <textarea class="ONE" id="aprHourOne29" onkeydown="saveHour(this)" rows="3" placeholder="HOUR 1: NOTHING DUE!"></textarea>
+        <textarea class="TWO" id="aprHourTwo29" onkeydown="saveHour(this)" rows="3" placeholder="HOUR 2: NOTHING DUE!"></textarea>
+        <textarea class="THREE" id="aprHourThree29" onkeydown="saveHour(this)" rows="3" placeholder="HOUR 3: NOTHING DUE!"></textarea>
+        <textarea class="FOUR" id="aprHourFour29" onkeydown="saveHour(this)" rows="3" placeholder="HOUR 4: NOTHING DUE!"></textarea>
+        <textarea class="FIVE" id="aprHourFive29" onkeydown="saveHour(this)" rows="3" placeholder="HOUR 5: NOTHING DUE!"></textarea>
+        <textarea class="SIX" id="aprHourSix29" onkeydown="saveHour(this)" rows="3" placeholder="HOUR 6: NOTHING DUE!"></textarea>
+        <textarea class="SEVEN" id="aprHourSeven29" onkeydown="saveHour(this)" rows="3" placeholder="HOUR 7: NOTHING DUE!"></textarea>
+        <textarea class="EIGHT" id="aprHourEight29" onkeydown="saveHour(this)" rows="3" placeholder="HOUR 8: NOTHING DUE!"></textarea>
+    </li>
+    <li id="calendarContext">
+        <textarea class="ZERO" id="aprHourZero30" onkeydown="saveHour(this)" rows="3" placeholder="HOUR 0: NOTHING DUE!"></textarea>
+        <textarea class="ONE" id="aprHourOne30" onkeydown="saveHour(this)" rows="3" placeholder="HOUR 1: NOTHING DUE!"></textarea>
+        <textarea class="TWO" id="aprHourTwo30" onkeydown="saveHour(this)" rows="3" placeholder="HOUR 2: NOTHING DUE!"></textarea>
+        <textarea class="THREE" id="aprHourThree30" onkeydown="saveHour(this)" rows="3" placeholder="HOUR 3: NOTHING DUE!"></textarea>
+        <textarea class="FOUR" id="aprHourFour30" onkeydown="saveHour(this)" rows="3" placeholder="HOUR 4: NOTHING DUE!"></textarea>
+        <textarea class="FIVE" id="aprHourFive30" onkeydown="saveHour(this)" rows="3" placeholder="HOUR 5: NOTHING DUE!"></textarea>
+        <textarea class="SIX" id="aprHourSix30" onkeydown="saveHour(this)" rows="3" placeholder="HOUR 6: NOTHING DUE!"></textarea>
+        <textarea class="SEVEN" id="aprHourSeven30" onkeydown="saveHour(this)" rows="3" placeholder="HOUR 7: NOTHING DUE!"></textarea>
+        <textarea class="EIGHT" id="aprHourEight30" onkeydown="saveHour(this)" rows="3" placeholder="HOUR 8: NOTHING DUE!"></textarea>
+    </li>
+    <li id="calendarContext">
+        <textarea class="ZERO" id="aprHourZero31" onkeydown="saveHour(this)" rows="3" placeholder="HOUR 0: NOTHING DUE!"></textarea>
+        <textarea class="ONE" id="aprHourOne31" onkeydown="saveHour(this)" rows="3" placeholder="HOUR 1: NOTHING DUE!"></textarea>
+        <textarea class="TWO" id="aprHourTwo31" onkeydown="saveHour(this)" rows="3" placeholder="HOUR 2: NOTHING DUE!"></textarea>
+        <textarea class="THREE" id="aprHourThree31" onkeydown="saveHour(this)" rows="3" placeholder="HOUR 3: NOTHING DUE!"></textarea>
+        <textarea class="FOUR" id="aprHourFour31" onkeydown="saveHour(this)" rows="3" placeholder="HOUR 4: NOTHING DUE!"></textarea>
+        <textarea class="FIVE" id="aprHourFive31" onkeydown="saveHour(this)" rows="3" placeholder="HOUR 5: NOTHING DUE!"></textarea>
+        <textarea class="SIX" id="aprHourSix31" onkeydown="saveHour(this)" rows="3" placeholder="HOUR 6: NOTHING DUE!"></textarea>
+        <textarea class="SEVEN" id="aprHourSeven31" onkeydown="saveHour(this)" rows="3" placeholder="HOUR 7: NOTHING DUE!"></textarea>
+        <textarea class="EIGHT" id="aprHourEight31" onkeydown="saveHour(this)" rows="3" placeholder="HOUR 8: NOTHING DUE!"></textarea>
+    </li>
+    <li id="calendarContext">
+        <textarea class="ZERO" id="aprHourZero32" onkeydown="saveHour(this)" rows="3" placeholder="HOUR 0: NOTHING DUE!"></textarea>
+        <textarea class="ONE" id="aprHourOne32" onkeydown="saveHour(this)" rows="3" placeholder="HOUR 1: NOTHING DUE!"></textarea>
+        <textarea class="TWO" id="aprHourTwo32" onkeydown="saveHour(this)" rows="3" placeholder="HOUR 2: NOTHING DUE!"></textarea>
+        <textarea class="THREE" id="aprHourThree32" onkeydown="saveHour(this)" rows="3" placeholder="HOUR 3: NOTHING DUE!"></textarea>
+        <textarea class="FOUR" id="aprHourFour32" onkeydown="saveHour(this)" rows="3" placeholder="HOUR 4: NOTHING DUE!"></textarea>
+        <textarea class="FIVE" id="aprHourFive32" onkeydown="saveHour(this)" rows="3" placeholder="HOUR 5: NOTHING DUE!"></textarea>
+        <textarea class="SIX" id="aprHourSix32" onkeydown="saveHour(this)" rows="3" placeholder="HOUR 6: NOTHING DUE!"></textarea>
+        <textarea class="SEVEN" id="aprHourSeven32" onkeydown="saveHour(this)" rows="3" placeholder="HOUR 7: NOTHING DUE!"></textarea>
+        <textarea class="EIGHT" id="aprHourEight32" onkeydown="saveHour(this)" rows="3" placeholder="HOUR 8: NOTHING DUE!"></textarea>
+    </li>
+    <li id="calendarContext">
+        <textarea class="ZERO" id="aprHourZero33" onkeydown="saveHour(this)" rows="3" placeholder="HOUR 0: NOTHING DUE!"></textarea>
+        <textarea class="ONE" id="aprHourOne33" onkeydown="saveHour(this)" rows="3" placeholder="HOUR 1: NOTHING DUE!"></textarea>
+        <textarea class="TWO" id="aprHourTwo33" onkeydown="saveHour(this)" rows="3" placeholder="HOUR 2: NOTHING DUE!"></textarea>
+        <textarea class="THREE" id="aprHourThree33" onkeydown="saveHour(this)" rows="3" placeholder="HOUR 3: NOTHING DUE!"></textarea>
+        <textarea class="FOUR" id="aprHourFour33" onkeydown="saveHour(this)" rows="3" placeholder="HOUR 4: NOTHING DUE!"></textarea>
+        <textarea class="FIVE" id="aprHourFive33" onkeydown="saveHour(this)" rows="3" placeholder="HOUR 5: NOTHING DUE!"></textarea>
+        <textarea class="SIX" id="aprHourSix33" onkeydown="saveHour(this)" rows="3" placeholder="HOUR 6: NOTHING DUE!"></textarea>
+        <textarea class="SEVEN" id="aprHourSeven33" onkeydown="saveHour(this)" rows="3" placeholder="HOUR 7: NOTHING DUE!"></textarea>
+        <textarea class="EIGHT" id="aprHourEight33" onkeydown="saveHour(this)" rows="3" placeholder="HOUR 8: NOTHING DUE!"></textarea>
+    </li>
+    <li id="calendarContext">
+        <textarea class="ZERO" id="aprHourZero34" onkeydown="saveHour(this)" rows="3" placeholder="HOUR 0: NOTHING DUE!"></textarea>
+        <textarea class="ONE" id="aprHourOne34" onkeydown="saveHour(this)" rows="3" placeholder="HOUR 1: NOTHING DUE!"></textarea>
+        <textarea class="TWO" id="aprHourTwo34" onkeydown="saveHour(this)" rows="3" placeholder="HOUR 2: NOTHING DUE!"></textarea>
+        <textarea class="THREE" id="aprHourThree34" onkeydown="saveHour(this)" rows="3" placeholder="HOUR 3: NOTHING DUE!"></textarea>
+        <textarea class="FOUR" id="aprHourFour34" onkeydown="saveHour(this)" rows="3" placeholder="HOUR 4: NOTHING DUE!"></textarea>
+        <textarea class="FIVE" id="aprHourFive34" onkeydown="saveHour(this)" rows="3" placeholder="HOUR 5: NOTHING DUE!"></textarea>
+        <textarea class="SIX" id="aprHourSix34" onkeydown="saveHour(this)" rows="3" placeholder="HOUR 6: NOTHING DUE!"></textarea>
+        <textarea class="SEVEN" id="aprHourSeven34" onkeydown="saveHour(this)" rows="3" placeholder="HOUR 7: NOTHING DUE!"></textarea>
+        <textarea class="EIGHT" id="aprHourEight34" onkeydown="saveHour(this)" rows="3" placeholder="HOUR 8: NOTHING DUE!"></textarea>
+    </li>
+    <li id="calendarContext">
+        <textarea class="ZERO" id="aprHourZero35" onkeydown="saveHour(this)" rows="3" placeholder="HOUR 0: NOTHING DUE!"></textarea>
+        <textarea class="ONE" id="aprHourOne35" onkeydown="saveHour(this)" rows="3" placeholder="HOUR 1: NOTHING DUE!"></textarea>
+        <textarea class="TWO" id="aprHourTwo35" onkeydown="saveHour(this)" rows="3" placeholder="HOUR 2: NOTHING DUE!"></textarea>
+        <textarea class="THREE" id="aprHourThree35" onkeydown="saveHour(this)" rows="3" placeholder="HOUR 3: NOTHING DUE!"></textarea>
+        <textarea class="FOUR" id="aprHourFour35" onkeydown="saveHour(this)" rows="3" placeholder="HOUR 4: NOTHING DUE!"></textarea>
+        <textarea class="FIVE" id="aprHourFive35" onkeydown="saveHour(this)" rows="3" placeholder="HOUR 5: NOTHING DUE!"></textarea>
+        <textarea class="SIX" id="aprHourSix35" onkeydown="saveHour(this)" rows="3" placeholder="HOUR 6: NOTHING DUE!"></textarea>
+        <textarea class="SEVEN" id="aprHourSeven35" onkeydown="saveHour(this)" rows="3" placeholder="HOUR 7: NOTHING DUE!"></textarea>
+        <textarea class="EIGHT" id="aprHourEight35" onkeydown="saveHour(this)" rows="3" placeholder="HOUR 8: NOTHING DUE!"></textarea>
+    </li>
+</ul>            
+</div>
+
+    </div>
+</div>
+</body>
+</html>
+
+
+
+
+
+
+

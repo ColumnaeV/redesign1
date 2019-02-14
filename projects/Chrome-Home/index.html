@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Google Home</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link rel="shortcut icon" href="core/img/icon.png">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="core/css/index.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js"></script>
+</head>
+<body onload="data()">
+<!--Tesla Logo-->
+<center>
+<div id="middle">
+    <div id="clockContainer">
+    <h3 id="date"></h3>
+    <h3 id="clock"></h3>
+    </div> 
+    <div id="intro">
+    <img id="logo" src="core/img/ibWhite.png">
+    <div id="textContainer"><h1><span id="textSlot"></span>, Student.</h1></div>
+    </div>
+</div>
+<div id="bodyContainer">
+<!--Left-->
+<div id="leftContainer">
+    <div id="iconLeft">
+        <a href="https://drive.google.com" target="_blank"><img class="icons" src="core/img/googleicons/drive.svg"></a>
+        <p>Google Drive</p>
+        <a href="https://classroom.google.com" target="_blank"><img class="icons" src="core/img/googleicons/classroom.png"></a>
+        <p>Google Classroom</p>
+        <a href="https://www.google.com" target="_blank"><img class="icons" src="core/img/googleicons/search.svg"></a>
+        <p>Google Search</p>
+        <a href="https://mail.google.com" target="_blank"><img class="icons" src="core/img/googleicons/gmail.svg"></a>
+        <p>Google Mail</p>
+    </div>
+    <div id="iconRight">
+        <a href="https://docs.google.com" target="_blank"><img class="icons" src="core/img/googleicons/docs.svg"></a>
+        <p>Google Docs</p>
+        <a href="https://slides.google.com" target="_blank"><img class="icons" src="core/img/googleicons/slides.svg"></a>
+        <p>Google Slides</p>
+        <a href="https://sheets.google.com" target="_blank"><img class="icons" src="core/img/googleicons/sheets.svg"></a>
+        <p>Google Sheets</p>
+        <a href="https://translate.google.com" target="_blank"><img class="icons" src="core/img/googleicons/translate.svg"></a>
+        <p>Google Translate</p>
+    </div>
+</div>
+<div id="neutralSpace"></div>
+<!--Right-->
+<div id="rightContainer">
+<textarea name="notes" id="noteContainer" placeholder="Your notes:" spellcheck="false"></textarea>
+<a class="button" onclick="save()">SAVE</a>
+<a class="button" onclick="window.location='index.html'">REFRESH</a>
+</div>
+</div>    
+</center>
+<!--Interactive-->
+<div id="particles-js"></div>
+<script src="core/js/particles.js"></script>
+<script src="core/js/index.js"></script>
+<script src="core/js/extra.js"></script>
+</body>
+</html>

@@ -1,0 +1,191 @@
+body {
+    background-image: url(../images/MNHS_all.png);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    font-family: "Lato", sans-serif;
+    margin: 0;
+    overflow-x: hidden;
+    max-width: 100%;
+}
+/*Scrollbar Styles!*/
+::-webkit-scrollbar {
+    width: 0.5vw;
+}
+::-webkit-scrollbar-track {
+    background: #222222;
+    background-clip: content-box; 
+}
+::-webkit-scrollbar-thumb {
+    background: #555555;
+}
+#contentAll {
+    display: block;
+    width: 100vw;
+    height: 100vh;
+}
+#topNav {
+    background-color: #ffffff;
+    height: 6vh;
+    width: 100vw;
+    display: flex;
+    position: fixed;
+    margin-top: 0;
+}
+#bottomHalf {
+    
+}
+#calendarSpacer {
+    background-color: rgba(0,0,0,0);
+    height: 6vh;
+    width: 100vw;
+    display: flex;
+    margin-top: 0;
+}
+#calendar {
+    bottom: 0;
+    width: 100vw;
+    background-color: rgba(40,40,40,0.3);
+    transition-duration: 0.5s;
+}
+#spacer {
+    height: 6vh;
+    width: 1vh;
+    background-color: rgba(200,200,200,0.8);
+}
+#button {
+    height: 6vh;
+    width: 6vh;
+    font-size: 5vh;
+    text-align: center;
+    color: #777777;
+    
+}
+#button:hover {
+    background-color: rgba(150,150,150,0.7);
+    color: #ffffff;
+    cursor: pointer;
+    transition-duration: 0.3s;
+}
+#arrow {
+    height: 6vh;
+    width: 6vh;
+    font-size: 4vh;
+    text-align: center;
+    color: #777777;
+    
+}
+#arrow:hover {
+    background-color: rgba(150,150,150,0.7);
+    color: #ffffff;
+    cursor: pointer;
+    transition-duration: 0.3s;
+}
+#month {
+    height: 6vh;
+    width: 28vh;
+    line-height: 150%;
+    padding-left: 1vw;
+    font-size: 4vh;
+    color: #777777;
+}
+
+/*SIDENAV STYLES*/
+#sidenav {
+    top: 6vh;
+}
+#ibLogo {
+    padding-top: 2vh;
+    padding-bottom: 2vh;
+    width: 75%;
+}
+.sidePanelButtons {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    overflow-x: hidden;
+    background-color: rgba(150,150,150,1);
+    transition: 0.4s;
+    padding-bottom: 10vh;
+}
+.sidePanelButtons a{
+    padding-top: 1.5vh;
+    padding-bottom: 1.5vh;
+    padding-left: 1vw;
+    text-decoration: none;
+    font-size: 1.3vmax;
+    color: #ffffff;
+    display: block;
+    transition: 0.5s;
+    cursor: pointer;
+}
+.sidePanelButtons a:hover, .offcanvas a:focus {
+    color: rgba(150,150,150,1);
+    cursor: pointer;
+    background-color: #ffffff;
+}
+.sidePanelButtons .closebtn {
+    position: absolute;
+    top: 0%;
+    right: 10%;
+    font-size: 4.5vmax;
+    color: #0000cc;
+}
+
+/*CALENDAR STYLES*/
+.weekdays {
+    margin: 0;
+    padding: 10px 0;
+    border-bottom: solid #555555;
+}
+
+.weekdays li {
+    display: inline-block;
+    width: 13.6%;
+    color: #ffffff;
+    text-align: center;
+    height: 3vh;
+    font-size: 2.5vh;
+    margin-left: 0.2vw;
+    
+}
+
+.days {
+    padding: 10px 0;
+    margin: 0;
+}
+
+.days li {
+    list-style-type: none;
+    display: inline-block;
+    width: 13.6%;
+    margin-left: 0.2vw;
+    text-align: center;
+    margin-bottom: 5px;
+    font-size:3vh;
+    color: #ffffff;
+}
+#calendarContext {
+    padding: 10px 0;
+    background-color: rgba(50,50,50,0.5);
+    margin-left: 0.2vw;
+    border-bottom: solid #555555;
+}
+textarea {
+    font-family: "Lato", sans-serif;
+    width: 13vw;
+    font-size: 1.6vh;
+    background-color: rgba(0,0,0,0);
+    border-left: 0px;
+    border-right: 0px;
+    border-bottom: 0px;
+    outline: none;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+    color: #ffffff;
+    resize: none;
+}

@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Vy Le | Maya &amp; Music</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link rel="shortcut icon" href="core/img/icon.png">
+    <link rel="stylesheet" type="text/css" href="core/css/index.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js"></script>
+</head>
+<body>
+<!--Loading animation container-->
+<center><div id="load"><img id="loadingIcon" src="core/img/icon.png"></div></center>
+<!--Body-->
+<div id="bodyContainer">
+<!--Nav Bar-->
+<div id="navBar">
+    <h2 id="vyLe" class="navTabs" style="padding-left: 3vmax; float: left; padding-top: 0; color: #000;">VY LE</h2>
+    <a href="journal.html" class="navTabs">Journal</a>
+    <a class="navTabs" id="selectedTab">Maya &amp; Music</a>
+    <a href="life-of-maya.html" class="navTabs">Life of Maya</a>
+    <a href="index.html" class="navTabs">Home</a>
+</div>
+<!--Rest of the actual body-->
+<div id="bodyWrapper">
+<!--Introduction panel-->
+<center><h2 style="color: #ffd780; font-size: 16vmin; padding-top: 30vh; padding-bottom: 10vh;">Music</h2><div id="notify"></div><p style="padding-left: 5vw; padding-right: 5vw;">Before Angelou's famed future as an author and poet, she was a singer and dancer - specifically, to calypso music. She wrote multiple screenplays and sang and starred in them! She recorded her own album, <i>Miss Calypso</i>, where her deep voice captivated the audience. She learned modern and African style dances and taught it to others. She would also professionally dance for others.</p></center> 
+<!--Slideshow-->
+<div class="slideshow-container">
+    <div class="mySlides fade">
+        <div class="numbertext">1 / 6</div>
+        <img src="core/img/mayaMusic/slideshow/LOM-1.png" style="width:100%">
+    </div>
+    <div class="mySlides fade">
+        <div class="numbertext">2 / 6</div>
+        <img src="core/img/mayaMusic/slideshow/LOM-2.png" style="width:100%">
+    </div>
+    <div class="mySlides fade">
+        <div class="numbertext">3 / 6</div>
+        <img src="core/img/mayaMusic/slideshow/LOM-3.png" style="width:100%">
+    </div>
+    <div class="mySlides fade">
+        <div class="numbertext">4 / 6</div>
+        <img src="core/img/mayaMusic/slideshow/LOM-4.png" style="width:100%">
+    </div>
+    <div class="mySlides fade">
+        <div class="numbertext">5 / 6</div>
+        <img src="core/img/mayaMusic/slideshow/LOM-5.png" style="width:100%">
+    </div>
+    <div class="mySlides fade">
+        <div class="numbertext">6 / 6</div>
+        <img src="core/img/mayaMusic/slideshow/LOM-6.png" style="width:100%">
+    </div>
+<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+<a class="next" onclick="plusSlides(1)">&#10095;</a>
+</div>
+<div style="text-align: center; padding-top: 4vmin;">
+    <span class="dot" onclick="currentSlide(1)"></span> 
+    <span class="dot" onclick="currentSlide(2)"></span> 
+    <span class="dot" onclick="currentSlide(3)"></span> 
+    <span class="dot" onclick="currentSlide(4)"></span> 
+    <span class="dot" onclick="currentSlide(5)"></span> 
+    <span class="dot" onclick="currentSlide(6)"></span>
+</div>
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+</script>
+</div>
+<!--Footer-->
+<div class="twoSplit2" style="background-color: #222; padding: 5vmin;">
+    <div class="twoSplitLeft2" style="width: auto; padding-right: 5vmin;">
+        <img id="footerIcon" src="core/img/iconWhite.png">
+    </div>
+    <div class="twoSplitRight2">
+        <h6>Developed by Vy Le<br>&copy; 2018<br>All Rights Reserved</h6>
+    </div>
+</div>
+</div>
+<script src="core/js/index.js"></script>
+</body>
+</html>

@@ -1,0 +1,288 @@
+/*Standard*/
+h1,h2,h3,h4,h5,p {
+    cursor: default;
+}
+body {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    background-color: #fff;
+    overflow-x: hidden;
+}
+iframe {
+    width: 90vw;
+    height: 50vw;
+}
+#footerIcon {
+    width: 20vmin;
+}
+@font-face {
+  font-family: 'Bebas';
+  src:  url('../Bebas.TTF') format('truetype');
+}
+@font-face {
+  font-family: 'Droid';
+  src:  url('../DroidSerif-Regular.ttf') format('truetype');
+}
+/*Loading Icon Styles*/
+#load {
+    position: fixed;
+    background-color: #fff;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    left: 0;
+    top: 0;
+    z-index: 999;
+}
+#loadingIcon {
+    height: 50vmin;
+    padding-top: 25vh;
+}
+/*Scroll Bar Styles*/
+::-webkit-scrollbar {
+    width: 7px;
+}
+::-webkit-scrollbar-track {
+    background: #222;
+}
+::-webkit-scrollbar-thumb {
+    background: #ffd780;
+}
+/*Div Styles*/
+#bodyContainer {
+    width: 100vw;
+    height: auto;
+    transition-duration: 0.8s;
+}
+#bodyWrapper {
+    width: 90vw;
+    height: auto;
+    margin: 5vw;
+    display: block;
+}
+/*Nav Styles*/
+#navBar {
+    position: fixed;
+    top: 0;
+    height: 14vh;
+    width: 100%;
+    background-color: #fff;
+    transition-duration: 0.3s;
+    z-index: 10;
+}
+.navTabs {
+    color: #a4a4a4;
+    float: right;
+    padding-top: 35px;
+    padding-right: 30px;
+    cursor: pointer;
+    transition-duration: 0.25s;
+}
+.navTabs:hover {
+    opacity: 0.7;
+}
+#selectedTab {
+    color: #000;
+}
+/*Font Styles*/
+a {
+    font-family: 'Droid';
+    text-decoration: none;
+    font-size: 2.5vmin;
+}
+h2 {
+    font-family: 'Bebas';
+    color: #333;
+    word-spacing: 5px;
+    font-size: 4.5vmin;
+}
+h3 {
+    font-family: 'Bebas';
+    color: #a4a4a4;
+    word-spacing: 5px;
+    font-size: 4.25vmin;
+    padding: 0.5vmin;
+}
+h5 {
+    font-family: 'Droid';
+    color: #333;
+    word-spacing: 5px;
+    font-size: 3vmin;
+}
+h6 {
+    font-family: 'Droid';
+    font-weight: 100;
+    color: #fff;
+    line-height: 140%;
+    word-spacing: 5px;
+    font-size: 2.5vmin;
+}
+p {
+    font-family: 'Droid';
+    font-size: 3vmin;
+    color: #333;
+    line-height: 180%;
+}
+li {
+    font-family: 'Droid';
+    font-size: 3.5vmin;
+    color: #333;
+    padding-top: 2.5vmin;
+    line-height: 150%;
+}
+.aLink {
+    cursor: pointer;
+    font-family: 'Droid';
+    font-size: 3.5vmin;
+    color: #333;
+    padding-top: 2.5vmin;
+    text-decoration: underline;
+}
+/*HOME STYLES*/
+#intro {
+    margin-top: 10vh;
+    background-image: url(../img/home/title.png);
+    background-repeat: no-repeat;
+    background-size:contain;
+    width: 100%;
+    height: 52vw;
+    text-align: right;
+}
+.twoSplit {
+    display: inline-flex;
+    width: 100%;
+    height: auto;
+    padding-top: 5vmin;
+}
+.twoSplit2 {
+    display: inline-flex;
+    width: 100%;
+    height: auto;
+    padding-top: 5vmin;
+}
+.twoSplitLeft {
+    width: 50%;
+    float: left;
+}
+.twoSplitLeft2 {
+    width: 50%;
+    float: left;
+}
+.twoSplitRight {
+    width: 50%;
+    float: right;
+}
+.twoSplitRight2 {
+    width: 50%;
+    float: right;
+}
+#hl {
+    width: 100;
+    height: 2px;
+    background-color: #777;
+}
+/*Slideshow Styles*/
+.mySlides {display: none}
+img {vertical-align: middle;}
+.slideshow-container {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+    padding-top: 5vmin;
+}
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+}
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+.prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+}
+/* Number text (1/3 etc) */
+.numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 10px 12px;
+    position: absolute;
+    top: 0;
+}
+/* The dots/bullets/indicators */
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+.active, .dot:hover {
+    background-color: #717171;
+}
+/* Fading animation */
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+@-webkit-keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+}
+@keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+}
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+    .prev, .next,.text {font-size: 11px}
+}
+/*Mobile Support*/
+@media only screen and (max-width: 100vh) {
+.twoSplit {
+    display: inherit;
+    width: 100%;
+}
+.twoSplitLeft {
+    width: 100%;
+    float: inherit;
+}
+.twoSplitRight {
+    width: 100%;
+    padding-left: 0;
+    float: inherit;
+}
+/*Nav Styles*/
+#navBar {
+    position: fixed;
+    top: 0;
+    height: 7vh;
+    width: 100%;
+    background-color: #fff;
+    transition-duration: 0.3s;
+    z-index: 10;
+}
+.navTabs {
+    color: #a4a4a4;
+    float: right;
+    padding-top: 3vh;
+    padding-right: 10px;
+    cursor: pointer;
+    transition-duration: 0.25s;
+}
+}

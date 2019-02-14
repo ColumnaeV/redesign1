@@ -1,0 +1,332 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    font: 400 15px/1.8 "Lato", sans-serif;
+    color: #777;
+}
+/* Turn off parallax scrolling for tablets and phones */
+@media only screen and (max-device-width: 768px) {
+    .bgimg-1, .bgimg-2, .bgimg-3 {
+        background-attachment: scroll;
+    }
+}
+/*IF LENGTH > WIDTH*/
+@media only screen and (max-width: 100vh) {
+    .nav {
+        display: none;
+    }
+    .slide01 {
+    background-image: url("images/intro.jpg");
+    position: relative;
+    opacity: 0.85;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    max-width: 100vw;
+    min-height: 100vh;
+}
+    .slide02 {
+    background-image: url("images/team.jpg");
+    position: relative;
+    opacity: 0.85;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    max-width: 100vw;
+    min-height: 45vh;
+}
+    .slide03 {
+    background-image: url("images/testing.jpg");
+    position: relative;
+    opacity: 0.85;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    max-width: 100vw;
+    min-height: 45vh;
+}
+    .slide04 {
+    background-image: url("images/contact.JPG");
+    position: relative;
+    opacity: 0.85;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    max-width: 100vw;
+    min-height: 45vh;
+}
+    .window {
+    position: relative;
+    }
+}
+/*IF WIDTH > LENGTH*/
+@media only screen and (max-height: 100vw) {
+    #tripleMenu {
+        display: none;
+    }
+    #tripleMenuClose {
+        display: none;
+    }
+    .twoNav {
+        display: none;
+    }
+    .slide01 {
+    background-image: url("images/intro.jpg");
+    position: relative;
+    opacity: 0.85;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    max-width: 100vw;
+    min-height: 100vh;
+}
+    .slide02 {
+    background-image: url("images/team.jpg");
+    position: relative;
+    opacity: 0.85;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    max-width: 100vw;
+    min-height: 45vh;
+}
+    .slide03 {
+    background-image: url("images/testing.jpg");
+    position: relative;
+    opacity: 0.85;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    max-width: 100vw;
+    min-height: 45vh;
+}
+    .slide04 {
+    background-image: url("images/contact.JPG");
+    position: relative;
+    opacity: 0.85;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    max-width: 100vw;
+    min-height: 45vh;
+}
+    .window {
+    position: relative;
+    }
+}
+/*Top Nav Bar*/
+#secondNav {
+    width: 100%;
+    height: 100%;
+    margin-top: 8vh;
+    border-top: 1px solid #303030;
+    position: fixed;
+    background-color: rgba(40,40,40,1);
+    z-index: 2;
+    text-align: center;
+}
+#button1 {
+    width: 100%;
+    height: 21vh;
+    line-height: 21vh;
+    text-align: center;
+    color: #ffffff;
+    font-size: 5vh;
+    vertical-align: middle;
+}
+#button2 {
+    width: 100%;
+    height: 21vh;
+    line-height: 21vh;
+    text-align: center;
+    color: #ffffff;
+    font-size: 5vh;
+}
+#button3 {
+    width: 100%;
+    height: 21vh;
+    line-height: 21vh;
+    text-align: center;
+    color: #ffffff;
+    font-size: 5vh;
+}
+#button4 {
+    width: 100%;
+    height: 21vh;
+    line-height: 21vh;
+    text-align: center;
+    color: #ffffff;
+    font-size: 5vh;
+}
+#button1:hover {
+    color: #303030;
+    background-color: #ffffff;
+    cursor: pointer;
+    transition-duration: 0.5s;
+}
+#button2:hover {
+    color: #303030;
+    background-color: #ffffff;
+    cursor: pointer;
+    transition-duration: 0.5s;
+}
+#button3:hover {
+    color: #303030;
+    background-color: #ffffff;
+    cursor: pointer;
+    transition-duration: 0.5s;
+}
+#button4:hover {
+    color: #303030;
+    background-color: #ffffff;
+    cursor: pointer;
+    transition-duration: 0.5s;
+}
+#topNavBar {
+    width: 100%;
+    height: 8vh;
+    background-color: #ffffff;
+    box-shadow: 0 2px 5px #000000;
+    position: fixed;
+    z-index: 1;
+}
+#navLogo {
+    float: left;
+    height: 7vh;
+    padding: 0.5vh;
+}
+#selection {
+    height: 100%;
+    float: right;
+    display: flex;
+}
+#spacer {
+    width: 1px;
+    height 3vh;
+    margin: 1vh;
+    background-color: #303030;
+}
+a {
+    color: #303030;
+    font-size: 3.5vh;
+    margin: 1vh;
+}
+a:hover {
+    color: #cccccc;
+    cursor: pointer;
+    transition-duration: 0.3s;
+}
+#tripleMenu {
+    font-size: 3.5vh;
+    margin: 1vh;
+    margin-right: 2vh;
+}
+#tripleMenuClose {
+    font-size: 3.5vh;
+    margin: 1vh;
+    margin-right: 2vh;
+}
+/*Scrollbar Styles!*/
+::-webkit-scrollbar {
+    width: 8px;
+}
+::-webkit-scrollbar-track {
+    background: #303030;
+    background-clip: content-box; 
+}
+::-webkit-scrollbar-thumb {
+    background: #ffffff;
+    border: solid 1px #303030;
+}
+/*Body Sections*/
+/*divs / sections*/
+#slides {
+    color: #dddddd;
+    background-color: #303030;
+    text-align: center;
+    padding: 1vmin 1vmin;
+    text-align:  justify;
+    padding-bottom: 8vmin;
+    border: none;
+}
+#slidesFinal {
+    color: #303030;
+    background-color: #ffffff;
+    text-align: center;
+    padding: 1vmin 1vmin;
+    text-align:  justify;
+}
+#slideTitle {
+    background-color: transparent;
+    font-size: 4vmin;
+    color: #f7f7f7;
+    text-shadow: 0 0 20px #303030;
+}
+#triSplit {
+    width: 100%;
+    display: flex;
+}
+section {
+    width: 33.33333%;
+    float: left;
+    text-align: center;
+}
+/*text related*/
+.caption {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    width: 100%;
+    text-align: center;
+    color: #000000;
+}
+.caption span.border {
+    background-color: #111111;
+    color: #ffffff;
+    padding: 2vmin;
+    font-size: 5vmin;
+    letter-spacing: 0.5vmin;
+}
+h2 {
+    font-size: 2.5vmin;
+    text-align: center;
+    color: #ffffff;
+}
+h3 {
+    padding-top: 2vh;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    font: 20px "Lato", sans-serif;
+    color: #111111;
+    font-size: 5vmin;
+    text-align: center;
+    color: #ffffff;
+    padding-bottom: 2vmin;
+}
+h4 {
+    word-spacing: 2px;
+    text-align: left;
+    font-size: 1.4vmin;
+    padding-left: 2vmin;
+    padding-bottom: 1vmin;
+    font-weight: 300;
+}
+p {
+    text-align: center;
+    font-size: 2.4vmin;
+    padding-left: 2vmin;
+    padding-right: 2vmin;
+    padding-bottom: 2vmin;
+}
+#list {
+    text-align: left;
+    font-size: 2.4vmin;
+    padding-left: 2vmin;
+    padding-right: 2vmin;
+    padding-bottom: 2vmin;
+    line-height: 220%;
+}

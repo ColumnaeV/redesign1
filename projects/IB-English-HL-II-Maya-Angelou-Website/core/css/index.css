@@ -1,0 +1,359 @@
+/*General / Container Styles*/
+p,h1,h2,h3,.socialMedia:hover {
+    cursor: default;
+    opacity: 1;
+}
+a {
+    text-decoration: none;
+    color: #e02121;
+}
+/*Loading Icon Styles*/
+#load {
+    position: fixed;
+    background-color: #e6e6e6;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    left: 0;
+    top: 0;
+    z-index: 999;
+}
+/*All Parallax Code*/
+.titleSlide {
+    height: 100vh;
+    position: relative;
+    opacity: 1;
+    background-image: url(../img/general/pattern.svg);
+    z-index: 11;
+    opacity: 1;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.caption {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    width: 100%;
+    text-align: center;
+    color: #e6e6e6;
+}
+.caption span.border {
+    background-color: #e6e6e6;
+    color: #e02121;
+    padding: 32px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    font-size: 8vmin;
+    font-weight: 500;
+    text-align: center;
+    line-height: 140%;
+    letter-spacing: 0.5vmin;
+    text-transform: uppercase;
+    align-content: 10px;
+}
+/*More Code*/
+body {
+    background: #e6e6e6;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    overflow-x: hidden;
+    font-family: "Roboto", 'Lato';
+}
+img {
+    width: 80%;
+}
+.mediaContainer img:hover {
+    width: 95%;
+}
+.socialMedia {
+    width: 10vmin;
+}
+#socMedContainer {
+    display: inline-flex;
+    width: 100%;
+}
+#socMedLeft {
+    width: 28vw;
+    float: left;
+}
+#socMedRight {
+    width: 28vw;
+    padding-left: 4vw;
+    float: right;
+}
+/*PAGES*/
+#bodyContainer{
+    width: 100vw;
+    height: 100%;
+    transition-duration: 1s;
+}
+#intro {
+    padding-top: 20vh;
+    min-height: 80vh;
+    padding-bottom: 0vh;
+}
+.page {
+    z-index: 11;
+    opacity: 1;
+    width: 60vw;
+    left: 50%;
+    padding-bottom: 20vh;
+}
+/*Image Container*/
+#iconContainer {
+    width: 100%;
+    height: auto;
+    display: inline-block;
+}
+.icons {
+    width: 10%;
+    padding: 2%;
+}
+.mediaContainer {
+    display: table-cell;
+    vertical-align: middle;
+    width: 20vmax;
+    height: 20vmax;
+    margin: 50px auto;
+    background: rgba(0,0,0,0.0);
+    position: relative;
+}
+/*Navigation Panel Styles*/
+#navContainer {
+    display: inherit;
+    position: fixed;
+    z-index: 15;
+    opacity: 1;
+    top: 10vh;
+    left: 0.5vw;
+    transition-duration: 0.5s;
+}
+#navContainer2 {
+    display: none;
+    height: 0;
+    top: 0;
+}
+.sidePanelButtons a{
+    padding: 1.5vmin;
+    padding-right: 5vmin;
+    margin-left: 0.1vmin;
+    margin-top: 0.5vmin;
+    text-decoration: none;
+    font-size: 3vmin;
+    color: #fff;
+    background-color: #c4c4c4;
+    display: block;
+    transition: 0.5s;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-weight: 100;
+}
+#tabHome{
+    color: #ffffff;
+    background-color: #911a1a;
+}
+/*Particle Styles*/
+#particles-js {
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    position: fixed;
+    z-index: -1;
+    top: 0;
+    opacity: 0.5;
+    background-position: 50% 50%;
+}
+canvas{
+    width: 100%;
+    height: 100%;
+}
+/*Nav Styles*/
+b {
+    border: solid #707070;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    margin-top: 5vh;
+    padding: 9px;
+    cursor: pointer;
+}
+.down {
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+}
+/*Scroll Bar Styles*/
+::-webkit-scrollbar {
+    width: 7px;
+}
+::-webkit-scrollbar-track {
+    background: #777;
+}
+::-webkit-scrollbar-thumb {
+    background: #911a1a;
+}
+/*Text Styles*/
+.titleText {
+    top: 50;
+    transform: translateY(-50%);
+    width: auto;
+    padding: 10px;
+    background-color: #e6e6e6;
+}
+h1 {
+    color: #e02121;
+    font-size: 8vmin;
+    font-weight: 500;
+    text-align: center;
+    line-height: 140%;
+    letter-spacing: 0.5vmin;
+    text-transform: uppercase;
+}
+h2 {
+    padding-top: 8vh;
+    color: #e02121;
+    font-size: 4vmin;
+    font-weight: 500;
+    text-align: center;
+    line-height: 140%;
+    text-transform: uppercase;
+}
+h3 {
+    padding-bottom: 3vh;
+    color: #911a1a;
+    font-size: 3vmin;
+    font-weight: 400;
+    text-align: center;
+    line-height: 140%;
+    text-transform: uppercase;
+}
+p {
+    color: #911a1a;
+    font-size: 2.75vmin;
+    text-align: center;
+    font-weight: 300;
+    line-height: 140%;
+    letter-spacing: 0.25vmin;
+    padding-top: 4vmin;
+    padding-bottom: 4vmin;
+    line-height: 180%;
+}
+/*Mobile Support*/
+@media only screen and (max-width: 100vh) {
+#load {
+    padding-top: 10vh;
+    position: fixed;
+    background-color: #e6e6e6;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    left: 0;
+    top: 0;
+    z-index: 999;
+}
+#navContainer {
+    display: none;
+}
+#navContainer2 {
+    display: inherit;
+    position: fixed;
+    z-index: 15;
+    opacity: 1;
+    top: 10vh;
+    left: 0.5vmin;
+    transition-duration: 0.5s;
+}
+#tabHome2{
+    background-color: #911a1a;
+}
+.sidePanelButtons a{
+    padding: 2.5vmin;
+    padding-left: 3vmin;
+    padding-right: 4vmin;
+    margin-left: 0.1vmin;
+    text-decoration: none;
+    color: #fff;
+    background-color: #c4c4c4;
+    transition: 0.5s;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-weight: 100;
+}
+#tabIcon {
+    width: 5vw;
+}
+h1 {
+    color: #e02121;
+    font-size: 9vmin;
+    font-weight: 500;
+    text-align: center;
+    line-height: 140%;
+    letter-spacing: 0.5vmin;
+    text-transform: uppercase;
+}
+h2 {
+    padding-top: 8vh;
+    color: #e02121;
+    font-size: 5vmin;
+    font-weight: 500;
+    text-align: center;
+    line-height: 140%;
+    text-transform: uppercase;
+}
+h3 {
+    color: #911a1a;
+    font-size: 4vmin;
+    font-weight: 400;
+    text-align: center;
+    line-height: 140%;
+    text-transform: uppercase;
+}
+p {
+    color: #911a1a;
+    font-size: 3vmin;
+    font-weight: 300;
+    line-height: 140%;
+    letter-spacing: 0.25vmin;
+    padding-bottom: 4vmin;
+    line-height: 180%;
+}
+.page{
+    z-index: 11;
+    opacity: 1;
+    width: 70vw;
+    left: 50%;
+    padding-bottom: 20vh;
+}
+#socMedContainer {
+    display: inherit;
+    width: 100%;
+}
+#socMedLeft {
+    width: 100%;
+    float: inherit;
+}
+#socMedRight {
+    width: 100%;
+    padding-left: 0;
+    float: inherit;
+}
+.icons {
+    width: 20%;
+    padding: 2%;
+}
+.titleSlide {
+    height: 85vh;
+    position: relative;
+    opacity: 1;
+    background-image: url(../img/general/pattern.svg);
+    z-index: 11;
+    opacity: 1;
+    background-attachment: scroll;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+}

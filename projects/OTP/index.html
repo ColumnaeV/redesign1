@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<title>Omaha Test Prep</title>
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" href="core/images/icon.png">
+    <link rel="stylesheet" type="text/css" href="core/styles.css">
+    <script src="core/scripts.js"></script>
+</head>
+<body>
+<!--Top Nav Bar-->    
+<div id="topNavBar">
+    <img id="navLogo" src="core/images/otp-logo.png">
+    <div class="nav" id="selection">
+    <div class="nav" id="spacer"></div>
+    <a class="nav" onclick="toOTP()">OTP</a>
+    <div class="nav" id="spacer"></div>
+    <a class="nav" onclick="toTUTORS()">TUTORS</a>
+    <div class="nav" id="spacer"></div>
+    <a class="nav" onclick="toMATERIAL()">MATERIAL</a>
+    <div class="nav" id="spacer"></div>
+    <a class="nav" onclick="toCONTACT()">CONTACT INFO</a>
+    <div class="nav" id="spacer"></div>
+    <a id="tripleMenu" onclick="openSecNav()">&#8801;</a>
+    <a id="tripleMenuClose" onclick="closeSecNav()" hidden>&times;</a>
+    </div>
+</div>
+<!--Second Nav-->
+<div class="twoNav" id="secondNav" hidden>
+    <div class="twoNav" id="button1" onclick="toOTP1()">OTP</div>
+    <div class="twoNav" id="button2" onclick="toTUTORS1()">TUTORS</div>
+    <div class="twoNav" id="button3" onclick="toMATERIAL1()">MATERIAL</div>
+    <div class="twoNav" id="button4" onclick="toCONTACT1()">CONTACT INFO</div>
+</div>
+<div id="completeBody">
+<!--Intro Window-->
+<div class="slide01">
+    <div class="caption">
+    <span class="border">OMAHA TEST PREPARATORY</span>
+    </div>
+</div>
+<!--About OTP Slide-->
+<span id="OTP"></span>
+<div id="slides">
+    <h3>ABOUT OTP</h3>
+    <p>Omaha Test Preparatory (OTP) is a student led organisation that looks forward to accelerating your child’s success in the future. With a highly talented and dedicated team, we will able to open your child to the standardised and advanced testing environment at an earlier time than the average public student. Your child will be exposed to whatever material you want them to (see “Materials” in the menu above). Our qualifications for our tutors can be seen below or accessed through the menu as well. With a surplus of enriched knowledge over ACT, PSAT/SAT, and Advanced Placement examinations, we only ask you for $25 USD for a one-on-one hour session with a free class every 5th session, or $15 USD in a group of 5 tutees or more.</p>
+    <p style="font-style: italic;">“During my public education experience, stress and anxiety was an integral part of my testing environment. Now after taking Omaha Test Prep, I am much more confident when I walk into the test room.”</p>
+    <p style="font-style: italic; text-align: right;">- Lucas Wang, OTP Participant</p>
+</div>
+<!--Window Break-->
+<div class="slide02">
+    <div class="caption">
+    <span class="border" id="slideTitle">THE TEAM</span>
+    </div>
+</div>
+<!--Tutors Slide-->
+<div class="window">
+    <span id="TUTORS"></span>
+    <div id="slides">
+    <h3>THE TUTORS</h3>
+      <p>Our dedicated team of experienced professionals are always on the ball by utilising the latest technology and best equipment to get the job done right. We’re always pushing ourselves to stay ahead and above of the curve and striving to perfect our tutoring. Meet some of our valued staff members below!</p>
+  <!--Tri Split-->
+    <div id="triSplit">
+    <section>
+        <h2>VISHNU MENON</h2>
+        <p id="list">&#9826; GPA: 4.192<br>&#9826; ACT: 36 (English - 35, Math - 35, Reading - 36, Science - 36)<br>&#9826; PSAT: 1470 (Scaled - 219)<br>&#9826; AP Tests: Statistics (5), Physics I (5), Human Geography (5), World History (5), Macroeconomics (5), Calculus BC (5), Psychology (5), Macroeconomics (5)</p>
+    </section>
+    <section>
+        <h2>DANIEL FU</h2>
+        <p id="list">&#9826; GPA: 4.365<br>&#9826; ACT: 36 (English - 36, Math - 36, Reading - 36, Science - 35, Writing - 12)<br>&#9826; PSAT: 1480 (Scaled-221)<br>&#9826; AP Tests: Statistics (5), Physics I (4), Chemistry (5), Human Geography (5), World History (4), Chinese (4), English Literature (5), English Language (5), Psychology (5), Macroeconomics (5), Microeconomics (5), Calculus BC (4)</p>
+    </section>
+    <section>
+        <h2>JASON SELVARAJ</h2>
+        <p id="list">&#9826; GPA: 4.407<br>&#9826; ACT: 35 (English - 34, Math - 36, Reading - 34, Science - 34)<br>&#9826; PSAT: 1490 (Scaled - 222)<br>&#9826; AP Tests: Statistics (5), Physics I (4), Human Geography (5), World History (4), Macroeconomics (5), Calculus BC (4), Chemistry (4), Physics II (4)</p>
+    </section>
+    </div>
+    </div>
+</div>
+<!--Window Break-->
+<div class="slide03">
+    <div class="caption">
+    <span class="border" id="slideTitle">EXAMINATIONS</span>
+    </div>
+</div>
+<!--The Exams Slide-->
+<div class="window">
+    <span id="MATERIAL"></span>
+    <div id="slides">
+    <h3>TUTORED MATERIAL</h3>
+  <!--Tri Split-->
+    <div id="triSplit">
+    <section>
+        <h2>ACT</h2>
+        <p>The ACT is one test that can truly determine a student's future. We believe, through our uniquely qualified test preparatory program, that we can make that vibrant and successful future for your child. All of our tutors have achieved scores in the top 1% of the nation's academic elite. With top scorers in each section, our test preparatory staff is especially equipped to help any student achieve his or her academic dream.</p>
+    </section>
+    <section>
+        <h2>ADVANCED PLACEMENT</h2>
+        <p>Some of the most rigorous tests in the world can become that much easier with our expert experience. We have also been through year-long AP courses and succeeded on the tests. We have achieved excellence in: Chemistry, Biology, Physics I, Physics II, Calculus BC, Statistics, Macroeconomics, World History, Human Geography, and US Government and Politics. We can offer this expertise to you because we have also experienced the rigour.</p>
+    </section>
+    <section>
+        <h2>PSAT / SAT</h2>
+        <p>The PSAT and SAT are another series of tests that can truly change the future for students. The PSAT opens the lucrative National Merit Scholarship up for students who perform well. The SAT is another national test that can change a student's future. We, through our test preparatory program, can help students take advantage of these opportunities. Our tutors are extremely accomplished in these tests to help any tutees.</p>
+    </section>
+    </div>
+    </div>
+</div>
+<!--Window Break-->
+<div class="slide04">
+    <div class="caption">
+    <span class="border" id="slideTitle">KEEP IN TOUCH</span>
+    </div>
+</div>
+<!--Contact Info Slide-->
+<div class="window">
+    <span id="CONTACT"></span>
+    <div id="slides">
+    <h3>CONTACT INFO</h3>
+    <p>If you have any further information about our services or would like to know more about Omaha Test Preparatory send us email!</p>
+    <p>omahatestprep123@gmail.com</p>
+    </div>
+</div>
+<!--Final White Slide-->
+<div class="window">
+    <div id="slidesFinal">
+    <h4>This website is developed and maintained by Christian Son Nguyen and the OTP Development Team.</h4>
+    </div>
+</div>    
+</div>
+</body>
+</html>
